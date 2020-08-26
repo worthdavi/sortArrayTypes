@@ -2,12 +2,12 @@
 Trabalho N1 - Construção e análise de algoritmos
 
 ## Checklist
-| Plugin | README |
+| Sort Type | DONE |
 | ------ | ------ |
-| InsertionSort | OK |
-| Mergesort | OK |
-| Heapsort | OK |
-| Quicksort | OK |
+| InsertionSort | YES |
+| Mergesort | NO |
+| Heapsort | NO |
+| Quicksort | NO |
 
 ### Relatório
 Logo após terminar os que faltam.
