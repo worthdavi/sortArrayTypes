@@ -5,9 +5,9 @@ Trabalho N1 - Construção e análise de algoritmos
 | Sort Type | DONE |
 | ------ | ------ |
 | InsertionSort | YES |
-| Mergesort | NO |
-| Heapsort | NO |
-| Quicksort | NO |
+| MergeSort | NO |
+| HeapSort | NO |
+| QuickSort | NO |
 
 ### Relatório
 Logo após terminar os que faltam.
