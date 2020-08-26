@@ -3,14 +3,18 @@ class Main {
     long startingTime = System.currentTimeMillis();
   
     // Functions
-    int[] array = {1, 5, 9, 6, 2, 4, 0, 7, 10, 11, 15};
+    ArrayCreator aCreator = new ArrayCreator();
+    // Criando array de 10000 posições e inserindo números de 0 a 10000
+    int array[] = aCreator.createArray(10000);
+    aCreator.insertIncrease(array, 0, 10000);
+    aCreator.printArray(array);
+
+    // Classe de insertSort
     Insertion obj = new Insertion();
-    obj.doInsertion(array);
-    for(int i = 0; i < array.length; i++){
-      System.out.println("[" + i + "] ");
-    }
+    // obj.doInsertion(array);
+
 
     long finishTime = System.currentTimeMillis() - startingTime;
-    System.out.println("Tempo gasto: " + finishTime);
+    System.out.println("Tempo gasto: " + finishTime + "ms");
   }
 }
