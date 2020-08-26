@@ -1,9 +1,9 @@
 # sortArrayTypes
-Trabalho N1 - Construção e análise de algoritmos
+Complexidade dos algoritmos de ordenação
 
 ## Checklist
-| Sort Type | DONE |
-| ------ | ------ |
+| Sort Type | DONE? |
+| ------ | ----- |
 | InsertionSort | YES |
 | MergeSort | NO |
 | HeapSort | NO |
