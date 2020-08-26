@@ -32,6 +32,12 @@ public class ArrayCreator{
       }    
     return array; 
   }
+  public static int[] insertTheSame(int array[], int number){
+    for(int i = 0; i < array.length; i++){
+        array[i] = number;
+      }    
+    return array; 
+  }
   public static void printArray(int array[]){
     for(int i = 0; i < array.length; i++){
       System.out.println("[" + array[i] + "]");

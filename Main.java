@@ -6,7 +6,7 @@ class Main {
     ArrayCreator aCreator = new ArrayCreator();
     // Criando array de 10000 posições e inserindo números de 0 a 10000
     int array[] = aCreator.createArray(10000);
-    aCreator.insertIncrease(array, 0, 10000);
+    aCreator.insertTheSame(array, 5);
     aCreator.printArray(array);
 
     // Classe de insertSort
