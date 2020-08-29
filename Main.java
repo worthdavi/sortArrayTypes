@@ -4,14 +4,17 @@ class Main {
   
     // Functions
     ArrayCreator aCreator = new ArrayCreator();
-    // Criando array de 10000 posições e inserindo números de 0 a 10000
-    int array[] = aCreator.createArray(10000);
-    aCreator.insertTheSame(array, 5);
-    aCreator.printArray(array);
+    int array[] = aCreator.createArray(100); // Criando array com X posições
+    aCreator.insertRamdonly(array, 0, 99); // Preenchendo com números de X a Y
+    aCreator.printArray(array); // Imprimindo array
 
     // Classe de insertSort
-    Insertion obj = new Insertion();
-    // obj.doInsertion(array);
+    // Insertion i_obj = new Insertion();
+    // i_obj.doInsertion(array);
+
+    // Classe de mergeSort
+    Merge m_obj = new Merge();
+    m_obj.doMerge(array, 0, 99);
 
 
     long finishTime = System.currentTimeMillis() - startingTime;
