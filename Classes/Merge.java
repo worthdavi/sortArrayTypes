@@ -15,23 +15,24 @@ public class Merge{
     int n2 = r - q;
     int first[] = new int[n1];
     int second[] = new int[n2];
-    for(int i = 0; i < first.length; i++){
+    int i, j, k;
+    for(i = 0; i < n1; i++){
       first[i] = array[p + i - 1];
-      for(int j = 0; j < second.length; j++){
-        second[j] = array[q + j];
-        // first[n1 + 1] = inf;
-        // second[n2 + 1] = inf; não sei oq eh isso aqui do slide 
-        i = 1;
-        j = 1;
-        for(int k = 0; k < r; k++){
-          if(first[i] <= second[i]){
-            array[k] = first[i];
-            i++; 
-          }else{
-            array[k] = second[j];
-            j++; 
-          }
-       }
+    }
+    for(j = 0; j < n2; j++){
+      second[j] = array[q + j];
+    }
+    first[n1 + 1] = 999999;
+    second[n2 + 1] = 999999;
+    i = 1;
+    j = 1;
+    for(k = 0; k < r; k++){
+      if(first[i] <= second[i]){
+        array[k] = first[i];
+        i++; 
+      }else{
+        array[k] = second[j];
+        j++; 
       }
     }
   }
