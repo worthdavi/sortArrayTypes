@@ -5,8 +5,8 @@ Complexidade dos algoritmos de ordenação
 | Sort Type | DONE? |
 | ------ | ----- |
 | InsertionSort | YES |
-| MergeSort | NO |
-| HeapSort | NO |
+| MergeSort | PROBLEM |
+| HeapSort | YES |
 | QuickSort | NO |
 
 ### Relatório
