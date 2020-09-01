@@ -4,10 +4,8 @@ class Main {
   
     // Functions
     ArrayCreator aCreator = new ArrayCreator();
-    // int array[] = aCreator.createArray(100); // Criando array com X posições
-    // aCreator.insertIncrease(array, 0, 100); // Preenchendo com números de X a Y
-
-    int array[] = {1, 5, 7, 10, 12, 8, 7, 4, 2, 3, 9};
+    int array[] = aCreator.createArray(100); // Criando array com X posições
+    aCreator.insertRandomly(array, 0, 100); // Preenchendo com números de X a Y
 
     // Classe de insertSort
     // Insertion i_obj = new Insertion();
@@ -20,8 +18,9 @@ class Main {
     // Dando erro!
 
     // Classe de heapSort
-    Heap h_obj = new Heap();
-    h_obj.doHeapSort(array, 11-1);
+    // Heap h_obj = new Heap();
+    // h_obj.doHeapSort(array, 100-1);
+    // Funcionando!
 
 
     aCreator.printArray(array);

@@ -10,22 +10,26 @@ public class Heap{
       maior = d;
     }
     if(maior != i){
+      int aux = array[i];
       array[i] = array[maior];
+      array[maior] = aux;
       doMaxHeapify(array, n, maior);
     }
   }
   public static void buildMaxHeap(int array[], int n){
-    for(int i = (int) Math.floor(n/2); i > 1; i--){
+    for(int i = (int) Math.floor(n/2); i >= 0; i--){
       doMaxHeapify(array, n, i);
     }
   }
   public static void doHeapSort(int array[], int n){
     buildMaxHeap(array, n);
     int m = n;
-    for(int i = n; i > 2; i--){
-      array[1] = array[i];
+    for(int i = n; i >= 1; i--){
+      int aux = array[0];
+      array[0] = array[i];
+      array[i] = aux;
       m = m - 1;
-      doMaxHeapify(array, m, 1);
+      doMaxHeapify(array, m, 0);
     }
   }
 }

@@ -25,7 +25,7 @@ public class ArrayCreator{
     }
     return array;
   }
-  public static int[] insertRamdonly(int array[], int fromNumber, int toNumber){
+  public static int[] insertRandomly(int array[], int fromNumber, int toNumber){
     Random r = new Random();
     for(int i = 0; i < array.length; i++){
         array[i] = r.nextInt(toNumber) + 1;
