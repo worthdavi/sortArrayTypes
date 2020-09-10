@@ -22,6 +22,11 @@ class Main {
     // h_obj.doHeapSort(array, 100-1);
     // Funcionando!
 
+    // Classe de quickSort
+    // Quick q_obj = new Quick();
+    // q_obj.doQuickSort(array, 0, 100-1);
+    // Funcionando!
+
 
     aCreator.printArray(array);
     long finishTime = System.currentTimeMillis() - startingTime;
